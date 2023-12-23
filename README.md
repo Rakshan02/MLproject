@@ -22,12 +22,17 @@ We have created base models without balancing the target class and then We have 
 ## Built With
 
 • pandas - Pandas is used for data cleaning and analysis. Its features were used for exploring, cleaning, transforming and visualizing the data. Also Pandas is an open-source python package built on top of Numpy.
+
 • numpy - Numpy adds support for large, multi-dimensional arrays and matrices, along with a large collection of high-level mathematical functions to operate on these arrays.
+
 • Matplotlib - Matplotlib work like MATLAB that helps in data visualization to makes some change to a figure: e.g., creates a figure, creates a plotting area in a figure, plots some lines in a plotting area, decorates the plot with labels, etc.
+
 • seaborn - Seaborn is also used for data visualization and it is based on matplotlib. It provides a high-level interface for attractive and informative statistical graphics.
+
 • Sklearn - Scikit-learn is a free machine learning library for the Python. It features various classification algorithms including 'LogisticRegression', 'RandomForsetClassifier', 'DecisionTreeClassifier',  'KNeighborsClassifier','AdaBoostClassifier','GradientBoostingClassifier', 'XGBClassifier which were used in this project. It also helps in calculating the metrics such as classification report, accuracy score, f1 score, roc auc score and confusion matrix.
+
 • Sweetviz is an open-source Python library that generates beautiful, high-density visualizations to kickstart EDA (Exploratory Data Analysis) with just two lines of code. Output is a fully self-contained HTML application.
-• 
+ 
 
 
 
@@ -48,7 +53,23 @@ AdaBoost Classifier
 Gradient Boosting Classifier
 XGBoost Classifier
 
-Here are the key performance metrics for each model: Model Accuracy Precision Recall F1-Score AUC-ROC Logistic Regression 0.9173 0.6765 0.0187 0.0364 0.7293 Random Forest Classifier 0.9167 0.6552 0.0357 0.0679 0.7651 Decision Tree Classifier 0.8477 0.2489 0.1898 0.2166 0.5960 K-Nearest Neighbors Classifier 0.9124 0.4783 0.0612 0.1085 0.6255 AdaBoost Classifier 0.9166 0.6481 0.0372 0.0703 0.7667 Gradient Boosting Classifier 0.9188 0.7148 0.0251 0.0486 0.7620 XGBoost Classifier 0.9193 0.7235 0.0221 0.0429 0.7671 Model Selection
+Here are the key performance metrics for each model: Model Accuracy Precision Recall F1-Score AUC-ROC
+
+Logistic Regression 0.9173 0.6765 0.0187 0.0364 0.7293 
+
+Random Forest Classifier 0.9167 0.6552 0.0357 0.0679 0.7651 
+
+Decision Tree Classifier 0.8477 0.2489 0.1898 0.2166 0.5960 
+
+K-Nearest Neighbors Classifier 0.9124 0.4783 0.0612 0.1085 0.6255 
+
+AdaBoost Classifier 0.9166 0.6481 0.0372 0.0703 0.7667 
+
+Gradient Boosting Classifier 0.9188 0.7148 0.0251 0.0486 0.7620 
+
+XGBoost Classifier 0.9193 0.7235 0.0221 0.0429 0.7671 
+
+Model Selection
 
 To determine the best model for production use, we considered the specific requirements of the lending application. The lending industry places a high value on recall to correctly identify loan applicants who may default.
 
