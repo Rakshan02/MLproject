@@ -13,9 +13,8 @@ We use Label Encoding for any categorical variables with only 2 categories and O
 ## Supervised Learning Techniques
 
 Algorithms used:
-Logistic regression
-Random Forest
-Extreme Gradient Boost
+Random Forest Classifier
+
 
 We have created base models without balancing the target class and then We have used SMOTE and Random OverSampler methods to balance the data. XGBoost model balanced using Random OverSampler method gave better accuracy and ROC AUC score.
 
@@ -37,9 +36,7 @@ We have created base models without balancing the target class and then We have 
 
 
 
-In conclusion, the Random Forest Classifier is recommended for production use due to its balanced performance in identifying loan default cases, taking into account the challenges faced during data analysis and model evaluation. Further model fine-tuning and interpretability techniques should be considered for enhancing its effectiveness in real-world lending scenarios.
-
-Double-click (or enter) to edit Final Conclusion Report Performance Analysis of Machine Learning Models for Loan Repayment Prediction
+In conclusion, the Random Forest Classifier is recommended for production use due to its balanced performance in identifying loan default cases, taking into account the challenges faced during data analysis and model evaluation. 
 
 In this comprehensive analysis, we evaluated multiple machine learning models on a loan repayment dataset to identify the most suitable model for production use. Our evaluation considered various performance metrics, including accuracy, precision, recall, F1-score, and area under the ROC curve (AUC-ROC). Additionally, we addressed key challenges in the dataset to ensure robust model performance. Model Performance Metrics
 
@@ -81,22 +78,24 @@ During our analysis, we encountered several challenges in the dataset and employ
 
     Imbalanced Dataset
 
-    Challenge: The dataset had a significant class imbalance, with a much higher number of non-default cases compared to default cases. Technique: We applied the Synthetic Minority Over-sampling Technique (SMOTE) to oversample the minority class (default cases) in the training dataset. This helped mitigate the class imbalance issue and improved model performance.
+    Challenge: The dataset had a significant class imbalance, with a much higher number of non-default cases compared to default cases. 
+    
+    Technique: We applied the Synthetic Minority Over-sampling Technique (SMOTE) to oversample the minority class (default cases) in the training dataset. This helped mitigate the class imbalance issue and improved model performance.
 
     Missing Data
 
-    Challenge: The dataset contained missing values in various features, which could adversely affect model training. Technique: We used a custom DataFrameImputer transformer to impute missing values in both numerical and categorical features. Numerical features were imputed with medians, while categorical features were imputed with the most frequent values.
+    Challenge: The dataset contained missing values in various features, which could adversely affect model training. 
+    
+    Technique: We used a custom DataFrameImputer transformer to impute missing values in both numerical and categorical features. Numerical features were imputed with medians, while categorical features were imputed with the most frequent values.
 
     Feature Engineering
 
-    Challenge: The dataset contained a large number of features, some of which might not be relevant for predicting loan repayment. Technique: We performed feature selection and importance analysis using techniques such as RandomForestRegressor. This allowed us to identify and focus on the most influential features for model training and interpretability.
-
-    Model Interpretability
-
-    Challenge: Understanding and interpreting complex machine learning models is crucial for decision-making in the lending domain. Technique: We employed feature importance analysis to gain insights into the factors contributing to loan defaults. Additionally, SHAP (SHapley Additive exPlanations) values and model-specific interpretability tools can be used to enhance model interpretability.
+    Challenge: The dataset contained a large number of features, some of which might not be relevant for predicting loan repayment. 
+    
+    Technique: We performed feature selection and importance analysis using techniques such as RandomForestRegressor. This allowed us to identify and focus on the most influential features for model training and interpretability.
 
 Conclusion
 
-In conclusion, the Random Forest Classifier has been recommended for production use due to its balanced performance in identifying loan default cases, taking into account the specific challenges faced during data analysis and model evaluation. Further model fine-tuning and interpretability techniques should be considered for enhancing its effectiveness in real-world lending scenarios.
+In conclusion, the Random Forest Classifier has been recommended for production use due to its balanced performance in identifying loan default cases, taking into account the specific challenges faced during data analysis and model evaluation.
 
 This comprehensive analysis provides valuable insights for making informed decisions in the lending industry, contributing to more accurate loan applicant assessments and reducing the risk of defaults.
